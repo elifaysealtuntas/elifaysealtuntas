@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+char messyString[] = "t6H0I9s6.iS.999a9.STRing"; 
+char current;
+int i = 0;
+current = messyString[i]; 
+while ( current != '\0' )
+{
+if ( isalpha(current) )
+printf ( "%c", tolower(current) ); 
+else if ( ispunct(current) )
+printf ( " "  );
+i++;
+current = messyString[i] ;
+}
+printf ("\n") ; 
+return 0;
+}
