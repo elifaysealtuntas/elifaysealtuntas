@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+
+    
+int addition(int a,int b){
+    int c= a + b;
+    return c;
+    
+}    
+int subtraction(int a,int b){
+    int c;
+    if(a>b){
+      
+      c= a-b;  
+    }
+     else {
+       c= b-a;  
+    }
+    return c;
+}
+void multiplication (int a, int b){
+    int c = a*b;
+    printf("result=%d\n",c);
+}
+void division (double a, double b){
+    double c;
+   c = a/b;
+printf("result=%lf\n",c);
+}
+    
+
+int main(){
+    
+    int opt;
+    int result=0;
+    double c;
+    int number1;
+    int number2;
+   while(1){
+       
+       printf("please choose a option: \n1)+\n2)-\n3)*\n4)/\n5)exit\n");
+       scanf("%d",&opt);
+       if(opt==5){
+           break;
+       }
+       printf("please enter 2 values:\n");
+       scanf("%d\n",&number1);
+       scanf("%d",&number2);
+        if (opt==1){
+           result= addition(number1,number2);
+           printf("result=%d\n",result);
+       }
+       else if (opt==2){
+           result= subtraction(number1,number2);
+           printf("result=%d\n",result);
+       }
+       else if (opt==3){
+           multiplication(number1,number2);
+           
+       }
+       else if (opt==4){
+           division(number1,number2);
+          
+       }
+   }
+   
+
+    return 0;
+}
+
+////////void fonsiyonunu kullanmak için fonksiyonun sonucunu bir değişkene atamaya gerek yok.
