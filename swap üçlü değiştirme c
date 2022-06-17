@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+void swap (int* x,int* y, int *z){
+   
+    int temp;
+    temp =*x;
+    *x= *y;
+    *y=*z;
+    *z= temp;
+}
+
+int main()
+{
+   //void swap(int*,int*);
+    int x=89;
+    int y =97;
+    int z=9967;
+    printf("before swapping x= %d, y=%d, z=%d\n ",x,y,z);
+     swap(&x,&y,&z);
+    printf("after swapping x= %d, y=%d, z=%d\n",x,y,z);
+    
+    return 0;
+}
