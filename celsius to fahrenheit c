@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+double fonk (double c){
+ double f;
+  f = (c * (1.8)) + 32;
+ return f;
+}
+
+int main()
+{
+       double fonk (double);
+    double fahrenheit1(int);
+     double result;
+     double a;
+     printf("enter a celcius value\n");
+     scanf("%lf",&a);
+     result = fonk(a);
+     printf("%lf Celcius is %lf  Fahrenheit",a,result);
+     return 0;
+}
+
