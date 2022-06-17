@@ -1,0 +1,27 @@
+#include <stdio.h>
+void grades(int array[],int size){
+   int index=0, score;
+   do{
+       scanf("%d",&score);
+       array[index]= score;
+       index++;
+   }
+   while(index<size);
+   ///// for döngüsüyle yaptığımız işlem
+}
+    
+int main()
+{
+   int siz=5;
+   int e2 [siz] ;
+   grades(e2,siz);
+   for(int i=0;i<siz;i++){
+       printf("%d\n",e2[i]);
+   }
+   
+   
+
+
+
+    return 0;
+}
