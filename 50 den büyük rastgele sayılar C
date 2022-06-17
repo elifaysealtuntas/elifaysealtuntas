@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+  srand(time(0));
+int count=0;
+int a;
+    for(int i=0;i<10;i++){
+        int a;
+       a=(rand()%100); 
+       printf("%d\n",a);
+       if(a>50){
+           count++;
+       }
+        
+    }
+ printf("%d numbers are bigger than 50",count);
+    return 0;
+}
